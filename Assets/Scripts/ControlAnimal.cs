@@ -60,6 +60,6 @@ public class ControlAnimal : MonoBehaviour
     public void ActualizarPuntos()
     {
         puntos++;
-        puntosText.text = "Points: " + puntos;
+        puntosText.text = "Score: " + puntos;
     }
 }
