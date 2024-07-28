@@ -880,14 +880,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lista:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1478308187}
+  - {fileID: 1475715436}
+  - {fileID: 222105071}
+  - {fileID: 331697796}
+  - {fileID: 786869512}
+  - {fileID: 680949805}
+  - {fileID: 1006278203}
+  - {fileID: 1546489967}
   botones:
   - {fileID: 72562108}
   - {fileID: 902534680}
