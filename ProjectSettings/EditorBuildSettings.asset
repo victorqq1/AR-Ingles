@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/AnimalesScene.unity
+    guid: a34223393008f8a4ca4c23a51afee99f
+  - enabled: 1
+    path: Assets/Scenes/CosasScene.unity
+    guid: ea6de9f12c7340e41a2a3b91c02b3ae8
+  - enabled: 1
+    path: Assets/Scenes/ComidaScene.unity
+    guid: 7900454115fff954797f623f545a2a6d
   m_configObjects: {}
