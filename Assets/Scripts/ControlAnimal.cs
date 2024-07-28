@@ -2,19 +2,24 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ControlAnimal : MonoBehaviour
 {
     public List<GameObject> lista = new List<GameObject> ();
     public List<Boton> botones = new List<Boton>();
-    // Start is called before the first frame update
     public String opcorrecta;
+    public Image correctFeedbackImage;
+    public Image incorrectFeedbackImage;
+    public int puntos = 0;
+    public TMP_Text puntosText;
     void Start()
     {
         EscogerModelos();
     }
 
-    void EscogerModelos(){
+    public void EscogerModelos(){
         int rand = UnityEngine.Random.Range(0,lista.Count);
         for (int i = 0; i < lista.Count; i++)
         {
@@ -44,9 +49,17 @@ public class ControlAnimal : MonoBehaviour
             nomanimales.RemoveAt(rand);
         }
     }
-    // Update is called once per frame
-    void Update()
+    public IEnumerator MostrarImagenFeedback(Image feedbackImage)
     {
-        
+        feedbackImage.gameObject.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        feedbackImage.gameObject.SetActive(false);
+        EscogerModelos();
+    }
+
+    public void ActualizarPuntos()
+    {
+        puntos++;
+        puntosText.text = "Points: " + puntos;
     }
 }

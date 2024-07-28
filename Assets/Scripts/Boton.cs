@@ -8,6 +8,7 @@ public class Boton : MonoBehaviour
     public string nombre;
     public bool esCorrecto;
     public TMP_Text texto;
+    public ControlAnimal controlAnimal;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,16 @@ public class Boton : MonoBehaviour
 
     public void clickBoton(){
         Debug.Log(esCorrecto);
+        if (esCorrecto)
+        {
+            controlAnimal.ActualizarPuntos();
+            StartCoroutine(controlAnimal.MostrarImagenFeedback(controlAnimal.correctFeedbackImage));
+        }
+        else
+        {
+            StartCoroutine(controlAnimal.MostrarImagenFeedback(controlAnimal.incorrectFeedbackImage));
+        }
     }
+
+    
 }
