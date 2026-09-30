@@ -1,4 +1,4 @@
-# AR-Inglés 🦁📱
+# AR-Ingles 🦁📱
 
 **Aplicación educativa de Realidad Aumentada para el aprendizaje de vocabulario en inglés en niños.**
 
